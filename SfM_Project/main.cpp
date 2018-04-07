@@ -11,7 +11,7 @@ int main()
 	punto1.print_coord();
 	Point3D punto2;
 	punto2.print_coord();
-	punto2.set_coord(1, 2, 3);
+	punto2.set_coord(1, 2, 4);
 	punto2.print_coord();
 	std::cout << std::endl;
 	return 0;
