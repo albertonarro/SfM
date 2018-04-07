@@ -2,6 +2,7 @@
 #define POINT_H
 
 #include<string>
+#include "Color.h"
 using namespace std;
 
 //Class Point represents points in the Cartesian coordinate
@@ -11,17 +12,20 @@ class Point
 	public:
 		Point();								// Default constructor
 		~Point();								// Destructor
-		Point(int x, int y);					// Conversion Constructor
+		Point(int, int, int);					// Conversion Constructor
 
-		int get_coordX();
-		int get_coordY();
-		void set_coordX(int);
-		void set_coordY(int);
-		void set_coord(int, int);
-		void print_coord();
+		int getCoordX();
+		int getCoordY();
+		void setCoordX(int);
+		void setCoordY(int);
+		void setCoord(int, int);
+		Color getColor();
+		void setColor(Color);
+		void printCoord();
 
 	private:
-		int x_coord, y_coord;	//coordinates of the point
+		int x_coord, y_coord;	// Coordinates of the point
+		Color coordColor;		// Color in RGB of the point
 			
 };
 

@@ -11,16 +11,16 @@ using namespace std;
 class Point3D : public Point
 {
 	public:
-		Point3D();                         // Default constructor
-		Point3D(int, int, int);				// Conversion Constructor
+		Point3D();						        // Default constructor
+		Point3D(int, int, int, int);			// Conversion Constructor
 		
-		void set_coord(int, int, int);
-		int get_coordZ();
-		void set_coordZ(int);
-		void print_coord();
+		void setCoord(int, int, int);
+		int getCoordZ();
+		void setCoordZ(int);
+		void printCoord();
 
 	private:
-		double z_coord;           // Coordinates of the point
+		int z_coord;           // Coordinates of the point
 };
 
 
